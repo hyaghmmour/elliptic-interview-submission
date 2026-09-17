@@ -1,0 +1,23 @@
+{
+  "name": "wallet-screener",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CLI that screens a cryptocurrency wallet address and outputs a CSV",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/index.ts",
+    "test": "node --test",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@noble/hashes": "^2.4.0",
+    "bech32": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2"
+  }
+}
